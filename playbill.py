@@ -88,7 +88,7 @@ if total:
                     s+=cost_incurred1
                 elif i in players2:
                     s+=cost_incurred2
-                st.write(i,":",s))
+                st.write(i,":",s)
             elif players_combine.count(i)==2:
                 st.write(i,":",cost_incurred1+cost_incurred2)
     if len(player_count)==3:
