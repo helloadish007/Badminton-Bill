@@ -8,6 +8,9 @@ from webdriver_manager.chrome import ChromeDriverManager
 
 st.header('Badminton Billing')
 
+st.image("https://register.oshawa.ca/OSHAWA/Banner%20-%20Badminton%20(2).png",width=600, use_column_width=1000)
+
+
 st.markdown("""
 <style>div[data-testid="stToolbar"] { display: none;}</style>
 """, unsafe_allow_html=True)
