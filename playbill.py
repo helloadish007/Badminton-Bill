@@ -88,9 +88,9 @@ if total:
                     s+=cost_incurred1
                 elif i in players2:
                     s+=cost_incurred2
-                st.write(i,":",s)
+                st.write(i,":",round(s))
             elif players_combine.count(i)==2:
-                st.write(i,":",cost_incurred1+cost_incurred2)
+                st.write(i,":",round(cost_incurred1+cost_incurred2))
     if len(player_count)==3:
         cost_incurred1=Cost_per_hour/player_count[0]
         cost_incurred2=Cost_per_hour/player_count[1]
@@ -108,9 +108,9 @@ if total:
                     s+=cost_incurred2
                 elif i in players3:
                     s+cost_incurred3
-                st.write(i,":",s)
+                st.write(i,":",round(s))
             elif players_combine.count(i)==3:
-                st.write(i,":",cost_incurred1+cost_incurred2+cost_incurred3)
+                st.write(i,":",round(cost_incurred1+cost_incurred2+cost_incurred3))
             elif players_combine.count(i)==1:
                 ss=0
                 if i in players1:
@@ -119,7 +119,7 @@ if total:
                     ss=cost_incurred2
                 elif i in players3:
                     ss=cost_incurred3
-                st.write(i,":",ss)
+                st.write(i,":",round(ss))
 
 
 
