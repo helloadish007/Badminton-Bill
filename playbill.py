@@ -67,7 +67,7 @@ elif hours==3:
 
 
     
-
+st.header(" BILL GENERATED : ")
 players_combine=[]
 if total:
     Cost_per_hour=int(total)/int(hours)
