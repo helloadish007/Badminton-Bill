@@ -27,23 +27,26 @@ total = st.text_input('Total Cost:  ', '')
 hours = st.slider('Number of hours played', 1, 3, 2)
 player_count=[]
 
+#['Aneesh', 'Adish', 'Babin', 'Abimon','Gans','Bala','Abhilash','Venkat','Sandeep','Manoj','Uday','Vijo','Toby','Dileep Boy Reddy','Amit']
+#['Aneesh', 'Babin', 'Abimon','Abhilash','Toby','Bala','Amit','Manoj']
+
 if hours==1:
     players1 = st.multiselect(
     'Who all played ? ',
-    ['Aneesh', 'Adish', 'Babin', 'Abimon','Gans','Bala','Abhilash','Venkat','Sandeep','Manoj','Uday','Vijo','Toby','Dileep Boy Reddy','Amit'],
-    ['Aneesh', 'Babin', 'Abimon','Abhilash','Toby','Bala','Amit','Manoj'])
+    ['Adish','Vasu bro','Ashik bro','Vaisakh','Bala','Karthik','Reymon','Abhishek','Anandu','Manikantan','Aneesh','Bharath','Unni','Vichu','Navneeth','Navneeth K','Rahul'],
+    ['Adish','Vasu bro','Bala','Karthik','Reymon','Abhishek','Anandu'])
     player_count.append(len(players1))
 
 elif hours==2:
     players1 = st.multiselect(
     'Who all played in 1st hour? ',
-    ['Aneesh', 'Adish', 'Babin', 'Abimon','Gans','Bala','Abhilash','Venkat','Sandeep','Manoj','Uday','Vijo','Toby','Dileep Boy Reddy','Amit'],
-    ['Aneesh', 'Babin', 'Abimon','Abhilash','Toby','Bala','Amit','Manoj'])
+    ['Adish','Vasu bro','Ashik bro','Vaisakh','Bala','Karthik','Reymon','Abhishek','Anandu','Manikantan','Aneesh','Bharath','Unni','Vichu','Navneeth','Navneeth K','Rahul'],
+    ['Adish','Vasu bro','Bala','Karthik','Reymon','Abhishek','Anandu'])
 
     players2 = st.multiselect(
     'Who all played in 2nd hour? ',
-    ['Aneesh', 'Adish', 'Babin', 'Abimon','Gans','Bala','Abhilash','Venkat','Sandeep','Manoj','Uday','Vijo','Toby','Dileep Boy Reddy','Amit'],
-    ['Aneesh', 'Babin', 'Abimon','Abhilash','Toby','Bala','Amit','Manoj'])
+    ['Adish','Vasu bro','Ashik bro','Vaisakh','Bala','Karthik','Reymon','Abhishek','Anandu','Manikantan','Aneesh','Bharath','Unni','Vichu','Navneeth','Navneeth K','Rahul'],
+    ['Adish','Vasu bro','Bala','Karthik','Reymon','Abhishek','Anandu'])
 
     player_count.append(len(players1))
     player_count.append(len(players2))
@@ -51,18 +54,18 @@ elif hours==2:
 elif hours==3:
     players1 = st.multiselect(
     'Who all played in 1st hour? ',
-    ['Aneesh', 'Adish', 'Babin', 'Abimon','Gans','Bala','Abhilash','Venkat','Sandeep','Manoj','Uday','Vijo','Toby','Dileep Boy Reddy','Amit'],
-    ['Aneesh', 'Babin', 'Abimon','Abhilash','Toby','Bala','Amit','Manoj'])
+    ['Adish','Vasu bro','Ashik bro','Vaisakh','Bala','Karthik','Reymon','Abhishek','Anandu','Manikantan','Aneesh','Bharath','Unni','Vichu','Navneeth','Navneeth K','Rahul'],
+    ['Adish','Vasu bro','Bala','Karthik','Reymon','Abhishek','Anandu'])
 
     players2 = st.multiselect(
     'Who all played in 2nd hour? ',
-    ['Aneesh', 'Adish', 'Babin', 'Abimon','Gans','Bala','Abhilash','Venkat','Sandeep','Manoj','Uday','Vijo','Toby','Dileep Boy Reddy','Amit'],
-    ['Aneesh', 'Babin', 'Abimon','Abhilash','Toby','Bala','Amit','Manoj'])
+    ['Adish','Vasu bro','Ashik bro','Vaisakh','Bala','Karthik','Reymon','Abhishek','Anandu','Manikantan','Aneesh','Bharath','Unni','Vichu','Navneeth','Navneeth K','Rahul'],
+    ['Adish','Vasu bro','Bala','Karthik','Reymon','Abhishek','Anandu'])
 
     players3 = st.multiselect(
     'Who all played in 3rd hour? ',
-    ['Aneesh', 'Adish', 'Babin', 'Abimon','Gans','Bala','Abhilash','Venkat','Sandeep','Manoj','Uday','Vijo','Toby','Dileep Boy Reddy','Amit'],
-    ['Aneesh', 'Babin', 'Abimon','Abhilash','Toby','Bala','Amit','Manoj'])
+    ['Adish','Vasu bro','Ashik bro','Vaisakh','Bala','Karthik','Reymon','Abhishek','Anandu','Manikantan','Aneesh','Bharath','Unni','Vichu','Navneeth','Navneeth K','Rahul'],
+    ['Adish','Vasu bro','Bala','Karthik','Reymon','Abhishek','Anandu'])
 
     player_count.append(len(players1))
     player_count.append(len(players2))
