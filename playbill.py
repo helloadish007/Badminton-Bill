@@ -21,8 +21,7 @@ with st.sidebar.expander("Tool info: "):
      """,width=10,use_column_width=20)
      st.text('Creator : ADISH007')
      url = "https://docs.google.com/spreadsheets/d/1XHp-EJqBmmMibz6Dq1xxwF1MqCDP0J9D8i7-I1bAYp8/edit#gid=0"
-     st.write("check out this [link](%s)" % url)
-     st.markdown("check out this [link](%s)" % url)
+     st.write("Badminton Payment sheet" % url)
      st.sidebar.image("https://images.indianexpress.com/2022/07/Badminton-4-1.jpg")
 
 
