@@ -28,7 +28,7 @@ with st.sidebar.expander("Tool info: "):
 players_list=['Adish','Vasu bro','Ashik bro','Vaisakh','Bala','Karthik','Reymon','Abhishek','Anandu','Manikantan','Aneesh','Bharath','Unni','Vichu','Navneeth','Navneeth K','Rahul']
 regular_player_list=['Adish','Vasu bro','Bala','Karthik','Reymon','Abhishek','Anandu']
 
-if st.button('Want to Add New Player?'):
+if st.checkbox('Want to Add New Player?'):
      new_player = st.text_input('Enter the name of new player:  ', '')
 players_list.append(new_player)
      
