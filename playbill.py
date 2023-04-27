@@ -28,18 +28,31 @@ with st.sidebar.expander("Tool info: "):
 players_list=['Adish','Vasu bro','Ashik bro','Vaisakh','Bala','Karthik','Reymon','Abhishek','Anandu','Manikantan','Aneesh','Bharath','Unni','Vichu','Navneeth','Navneeth K','Rahul']
 regular_player_list=['Adish','Vasu bro','Bala','Karthik','Reymon','Abhishek','Anandu']
 
-name = st.text_input("Want to Add New Player?")
-if st.button("Add Player"):
-    if name:
-        # Append the name to the list
-        players_list.append(name)
-        # Clear the text input box
-        name = ""
 
-if st.checkbox(''):
-     new_player = st.text_input('Enter the name of new player:  ', '')
-     players_list.append(new_player)
-     new_player=''
+if st.checkbox('Add Player'):
+    # Add a text input box to enter a new player's name
+    new_player = st.text_input('Enter the name of new player:')
+    
+    # Check if the user has submitted a new player
+    if st.button('Add'):
+        if new_player:
+            # Append the new player to the list of players
+            players_list.append(new_player)
+            # Clear the text input box
+            new_player = ""
+
+# name = st.text_input("Want to Add New Player?")
+# if st.button("Add Player"):
+#     if name:
+#         # Append the name to the list
+#         players_list.append(name)
+#         # Clear the text input box
+#         name = ""
+
+# if st.checkbox(''):
+#      new_player = st.text_input('Enter the name of new player:  ', '')
+#      players_list.append(new_player)
+#      new_player=''
      
 total = st.text_input('Total Cost:  ', '')
 hours = st.slider('Number of hours played', 1, 3, 2)
