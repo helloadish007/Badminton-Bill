@@ -4,6 +4,10 @@ import streamlit as st
 import requests
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
+from streamlit.hashing import _CodeHasher
+from streamlit.report_thread import get_report_ctx
+from streamlit.server.server import Server
+import SessionState
 
 
 st.header('Badminton Billing')
@@ -29,17 +33,39 @@ players_list=['Adish','Vasu bro','Ashik bro','Vaisakh','Bala','Karthik','Reymon'
 regular_player_list=['Adish','Vasu bro','Bala','Karthik','Reymon','Abhishek','Anandu']
 
 
-if st.checkbox('Add Player'):
-    # Add a text input box to enter a new player's name
-    new_player = st.text_input('Enter the name of new player:')
+# Define a function to get the current session state
+def get_session_state():
+    session_id = get_report_ctx().session_id
+    session_info = Server.get_current()._get_session_info(session_id)
+    return session_info.session
+
+# Get the current session state using SessionState
+session_state = SessionState.get(players_list, new_player="")
+
+# Add a text input box to the Streamlit app
+new_player = st.text_input('Enter the name of new player:', value=session_state.new_player)
+
+# Check if the user has submitted a new player
+if st.button('Add'):
+    if new_player:
+        # Append the new player to the list of players
+        session_state.players_list.append(new_player)
+        # Clear the text input box
+        session_state.new_player = ""
+
+
+
+# if st.checkbox('Add Player'):
+#     # Add a text input box to enter a new player's name
+#     new_player = st.text_input('Enter the name of new player:')
     
-    # Check if the user has submitted a new player
-    if st.button('Add'):
-        if new_player:
-            # Append the new player to the list of players
-            players_list.append(new_player)
-            # Clear the text input box
-            new_player = ""
+#     # Check if the user has submitted a new player
+#     if st.button('Add'):
+#         if new_player:
+#             # Append the new player to the list of players
+#             players_list.append(new_player)
+#             # Clear the text input box
+#             new_player = ""
 
 # name = st.text_input("Want to Add New Player?")
 # if st.button("Add Player"):
