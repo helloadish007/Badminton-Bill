@@ -31,7 +31,6 @@ regular_player_list=['Adish','Vasu bro','Bala','Karthik','Reymon','Abhishek','An
 if st.button('Want to Add New Player?'):
      new_player = st.text_input('Enter the name of new player:  ', '')
      players_list.append(new_player)
-     break
      
 total = st.text_input('Total Cost:  ', '')
 hours = st.slider('Number of hours played', 1, 3, 2)
