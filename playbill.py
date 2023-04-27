@@ -23,14 +23,21 @@ with st.sidebar.expander("Tool info: "):
      url = "https://docs.google.com/spreadsheets/d/1XHp-EJqBmmMibz6Dq1xxwF1MqCDP0J9D8i7-I1bAYp8/edit#gid=0"
      st.write("[Badminton Payment sheet](%s)" % url)
      st.sidebar.image("https://images.indianexpress.com/2022/07/Badminton-4-1.jpg")
+     
 
+players_list=['Adish','Vasu bro','Ashik bro','Vaisakh','Bala','Karthik','Reymon','Abhishek','Anandu','Manikantan','Aneesh','Bharath','Unni','Vichu','Navneeth','Navneeth K','Rahul']
+regular_player_list=['Adish','Vasu bro','Bala','Karthik','Reymon','Abhishek','Anandu']
 
+if st.button('Want to Add New Player?'):
+     new_player = st.text_input('Enter the name of new player:  ', '')
+     players_list.append(new_player)
+     break
+     
 total = st.text_input('Total Cost:  ', '')
 hours = st.slider('Number of hours played', 1, 3, 2)
 player_count=[]
 
-players_list=['Adish','Vasu bro','Ashik bro','Vaisakh','Bala','Karthik','Reymon','Abhishek','Anandu','Manikantan','Aneesh','Bharath','Unni','Vichu','Navneeth','Navneeth K','Rahul']
-regular_player_list=['Adish','Vasu bro','Bala','Karthik','Reymon','Abhishek','Anandu']
+
 
 #['Aneesh', 'Adish', 'Babin', 'Abimon','Gans','Bala','Abhilash','Venkat','Sandeep','Manoj','Uday','Vijo','Toby','Dileep Boy Reddy','Amit']
 #['Aneesh', 'Babin', 'Abimon','Abhilash','Toby','Bala','Amit','Manoj']
