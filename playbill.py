@@ -25,8 +25,8 @@ with st.sidebar.expander("Tool info: "):
      st.sidebar.image("https://images.indianexpress.com/2022/07/Badminton-4-1.jpg")
      
 
-players_list=['Adish','Vasu bro','Ashik bro','Vaisakh','Bala','Karthik','Reymon','Abhishek','Anandu','Manikantan','Aneesh','Bharath','Unni','Vichu','Navneeth','Navneeth K','Rahul','Adhip','Balu','Aswin','Amal']
-regular_player_list=['Adish','Vasu bro','Bala','Reymon','Anandu','Ashik bro']
+players_list=['Adish','Vasu bro','Ashik bro','Vaisakh','Bala','Karthik','Reymon','Abhishek','Anandu','Manikantan','Aneesh','Bharath','Unni','Vichu','Navneeth','Navneeth K','Rahul','Adhip','Balu','Aswin','Amal','Arun','Jerin']
+regular_player_list=['Adish','Vasu bro','Bala','Reymon','Arun','Ashik bro']
 
 
 
